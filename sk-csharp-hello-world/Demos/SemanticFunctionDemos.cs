@@ -23,21 +23,21 @@ namespace Demos
             context.Set("style", "yoda");
 
             // Call the semantic function
-            // var jokeFunctionName = "Joke";
-            // var result = await kernel.RunAsync(context, plugIn[jokeFunctionName]);
-            // Console.WriteLine(result);
+            var jokeFunctionName = "Joke";
+            var result = await kernel.RunAsync(context, plugIn[jokeFunctionName]);
+            Console.WriteLine(result);
 
             // Chain example
             //var excusesFunctionName = "Excuses";
-            var chuckNorrisFunctionName = "ChuckNorris";
-            var chainContext = new ContextVariables();
-            chainContext.Set("input", "karate");
-            ISKFunction[] pipeline = {
-                  //plugIn[excusesFunctionName],
-                  plugIn[chuckNorrisFunctionName]
-            };
-            var chainResult = await kernel.RunAsync(chainContext, pipeline);
-            Console.WriteLine(chainResult);
+            //var chuckNorrisFunctionName = "ChuckNorris";
+            //var chainContext = new ContextVariables();
+            //chainContext.Set("input", "karate");
+            //ISKFunction[] pipeline = {
+            //      //plugIn[excusesFunctionName],
+            //      plugIn[chuckNorrisFunctionName]
+            //};
+            //var chainResult = await kernel.RunAsync(chainContext, pipeline);
+            //Console.WriteLine(chainResult);
         }
 
         public static async Task BasicChaining(IKernel kernel)
