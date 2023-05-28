@@ -1,0 +1,3 @@
+Generate a Chuck Norris quote for the given event. Be creative and be funny. Let your imagination run wild.
+
+{{$input}}

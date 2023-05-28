@@ -1,0 +1,44 @@
+{
+    "skillName": "FunSkill",
+    "functionName": "Joke",
+    "description": "Generate a funny joke",
+    "filePath": "skills/FunSkill/Joke/skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "text-davinci-003-demo",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003-demo",
+                "endpoint": "https://zohan-openai.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 0,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "style",
+                    "value": "yoda"
+                },
+                {
+                    "key": "input",
+                    "value": "something about the universe"
+                }
+            ],
+            "output": {
+                "prompt": "WRITE EXACTLY ONE JOKE or HUMOROUS STORY ABOUT THE TOPIC BELOW\n\nJOKE MUST BE:\n- G RATED\n- WORKPLACE/FAMILY SAFE\nNO SEXISM, RACISM OR OTHER BIAS/BIGOTRY\n\nBE CREATIVE AND FUNNY. I WANT TO LAUGH.\nyoda\n+++++\n\nsomething about the universe\n+++++\n",
+                "durationInMilliseconds": 1730.5397,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "Q: What did Yoda say when he saw a UFO?\nA: \"May the force be with us!\"",
+                "textCompletionResult": "Q: What did Yoda say when he saw a UFO?\nA: \"May the force be with us!\""
+            }
+        }
+    ]
+}
