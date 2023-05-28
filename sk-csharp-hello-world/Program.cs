@@ -21,7 +21,10 @@ using ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
 IKernel kernel = new KernelBuilder().WithLogger(loggerFactory.CreateLogger<IKernel>()).WithConfiguration(kernelConfig).Build();
 
 // Demo: Call a semantic function from a plugin
-await Demos.SemanticFunctionDemos.CallSemanticFunction(kernel);
+//await Demos.SemanticFunctionDemos.CallSemanticFunction(kernel);
 
 // Demo: Chain semantic functions together
 //await Demos.SemanticFunctionDemos.BasicChaining(kernel);
+
+// Demo: Call a native function
+await Demos.NativeFunctionDemos.CallNativeFunction(kernel);
