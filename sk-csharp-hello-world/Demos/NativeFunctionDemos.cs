@@ -32,6 +32,15 @@ namespace Demos
             //var semanticPlugin = kernel.ImportSemanticSkillFromDirectory(skillsDirectory, "SemanticPlugin");
             //var output = await kernel.RunAsync(context, semanticPlugin["DoubleTrouble"]);
             //Console.WriteLine(output);
+
+            // Call a semantic function from a native function
+            //var context = new ContextVariables();
+            //context.Set("style", "yoda");
+            //context.Set("input", "dancing");
+            //var skillsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Plugins");
+            //var semanticPlugin = kernel.ImportSemanticSkillFromDirectory(skillsDirectory, "SemanticPlugin");
+            //var output = await kernel.RunAsync(context, plugIn["TellAJoke"]);
+            //Console.WriteLine(output);
         }
     }
 }
