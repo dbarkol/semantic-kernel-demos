@@ -17,7 +17,7 @@ namespace Demos
 
             var context = new ContextVariables();
             context.Set("INPUT", "**This is the input** ");
-            var output = await kernel.RunAsync(context, plugIn["DupDupTest"]);
+            var output = await kernel.RunAsync(context, plugIn["DupDup"]);
             Console.WriteLine(output);
 
             // Pass in context variables
